@@ -29,7 +29,7 @@ const initDirective = {
 	header: [ "#" ],
 	groupIntervalTime: 1500,
 	privateIntervalTime: 2000,
-	helpMessageStyle: "message",
+	helpMessageStyle: "card",
 	fuzzyMatch: false,
 	matchPrompt: true,
 	concurrency: 10,
@@ -50,8 +50,8 @@ const initMail = {
 	tip: "前往 https://docs.adachi.top/config 查看配置详情",
 	host: "smtp.qq.com",
 	port: 587,
-	user: "123456789@qq.com",
-	pass: "",
+	user: "2787922490@qq.com",
+	pass: "yvrppzbcywcgdfcj",
 	secure: false,
 	servername: "",
 	rejectUnauthorized: false,
@@ -103,7 +103,7 @@ const initBanHeavyAt = {
 const initWebConsole = {
 	tip: "前往 https://docs.adachi.top/config 查看配置详情",
 	enable: true,
-	tcpLoggerPort: 54921,
+	tcpLoggerPort: 54920,
 	logHighWaterMark: 64,
 	jwtSecret: getRandomString( 16 )
 }

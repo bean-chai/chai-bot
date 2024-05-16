@@ -161,7 +161,7 @@ export default defineDirective( "order", async i => {
 		return;
 	}
 	
-	const title: string = `Adachi-BOT v${ version }~`;
+	const title: string = `chaichai-BOT v${ version }~`;
 	let ID: number = 0;
 	if ( showKeys ) {
 		const keys: string = commands.reduce( ( pre, cur ) => {

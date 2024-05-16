@@ -3,7 +3,7 @@ const template = `<div class="help">
 		<header>
 			<img src="/@help/assets/resource/top-bg.png" alt="top-bg">
 			<div class="left-header">
-				<p>Adachi-BOT</p>
+				<p>chaichai-BOT</p>
 				<p>{{ model === "keys" ? "指令key值表" : "使用文档" }}</p>
 			</div>
 			<div class="right-header">
@@ -28,7 +28,7 @@ const template = `<div class="help">
 			</section>
 		</main>
 		<footer>
-			<p class="sign">Created by Adachi-BOT v{{ version }}</p>
+			<p class="sign">Created by chaichai-BOT v{{ version }}</p>
 		</footer>
 	</template>
 </div>`
