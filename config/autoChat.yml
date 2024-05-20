@@ -1,0 +1,6 @@
+tip: 前往 https://docs.adachi.top/config 查看配置详情
+enable: true
+type: 1
+audio: false
+secretId: ""
+secretKey: ""

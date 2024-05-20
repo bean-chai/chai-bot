@@ -1,0 +1,1 @@
+function c(n,e){let t=n.split(".");return e?[t.splice(0,e+1).join("."),...t]:t}function o(n,e,t){return c(e,t).reduce((i,r)=>(i||{})[r],n)}function a(n,e,t,i){c(e,i).reduce((r,s,u,f)=>{if(u===f.length-1)r[s]=t;else return r[s]={},r[s]},n)}export{a,o};

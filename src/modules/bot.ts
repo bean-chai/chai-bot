@@ -22,6 +22,8 @@ import { unlinkSync } from "fs";
 import axios, { AxiosError } from "axios";
 import AssetsUpdate from "@/modules/management/assets";
 import process from "process";
+import { Message, SendFunc } from "./message";
+import * as cmd from "@/modules/command/main";
 
 /** @interface BOT BOT 工具类 */
 export interface BOT {
@@ -93,7 +95,7 @@ export default class Adachi {
 		const message = new msg.default( config.base, client );
 		const mail = new MailManagement( config, client );
 		const renderer = new BasicRenderer();
-		
+
 		this.bot = {
 			client, command, file, redis,
 			message, mail, auth, interval,

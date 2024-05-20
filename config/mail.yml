@@ -1,0 +1,12 @@
+tip: 前往 https://docs.adachi.top/config 查看配置详情
+host: smtp.qq.com
+port: 587
+user: 2787922490@qq.com
+pass: yvrppzbcywcgdfcj
+secure: false
+servername: ""
+rejectUnauthorized: false
+logoutSend: false
+sendDelay: 5
+retry: 3
+retryWait: 5

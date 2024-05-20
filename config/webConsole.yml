@@ -1,0 +1,5 @@
+tip: 前往 https://docs.adachi.top/config 查看配置详情
+enable: true
+tcpLoggerPort: 54922
+logHighWaterMark: 64
+jwtSecret: OowdDsAkuVvowzcL

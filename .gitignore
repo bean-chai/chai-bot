@@ -11,23 +11,6 @@ node_modules
 /dist/
 *.local
 
-# adachi
-/public/assets/
-/config/
-/data/
-/database/
-/logs/
-adachi-lib/
-/src/plugins/genshin/data/
-
-# 屏蔽除内置插件外的其他自定义插件
-/src/plugins/*
-!/src/plugins/@help/
-!/src/plugins/@management/
-!/src/plugins/tools/
-
-/src/web-console/frontend/dist
-/src/web-console/frontend/build_setting.yml
 
 # Editor directories and files
 .vscode/*

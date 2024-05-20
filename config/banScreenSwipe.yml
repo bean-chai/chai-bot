@@ -1,0 +1,6 @@
+tip: 前往 https://docs.adachi.top/config 查看配置详情
+enable: false
+limit: 10
+duration: 1800
+prompt: true
+promptMsg: 请不要刷屏

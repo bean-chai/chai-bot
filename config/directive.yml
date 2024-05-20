@@ -1,0 +1,12 @@
+tip: 前往 https://docs.adachi.top/config 查看配置详情
+header:
+  - "#"
+groupIntervalTime: 1500
+privateIntervalTime: 2000
+helpMessageStyle: card
+fuzzyMatch: false
+matchPrompt: true
+concurrency: 10
+callTimes: 3
+countThreshold: 60
+ThresholdInterval: false

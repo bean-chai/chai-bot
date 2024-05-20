@@ -1,0 +1,13 @@
+tip: 前往 https://docs.adachi.top/config 查看配置详情
+reverseClient: false
+wsServer: 45.155.220.111:9081/event
+wsApiServer: 45.155.220.111:9081/api
+wsPort: 11451
+master: 2787922490
+inviteAuth: 2
+logLevel: info
+atUser: false
+atBOT: false
+addFriend: true
+apiTimeout: 20000
+renderPort: 80

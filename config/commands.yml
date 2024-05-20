@@ -1,0 +1,169 @@
+adachi.help:
+  type: order
+  auth: 1
+  scope: 3
+  headers:
+    - __菜单
+  enable: true
+  display: true
+  priority: 0
+adachi.detail:
+  type: order
+  auth: 1
+  scope: 3
+  headers:
+    - detail
+  enable: true
+  display: false
+  priority: 0
+adachi.call:
+  type: order
+  auth: 1
+  scope: 2
+  headers:
+    - call
+  enable: true
+  display: true
+  priority: 0
+adachi.manager:
+  type: switch
+  auth: 3
+  scope: 3
+  mode: divided
+  onKey: manager
+  offKey: unmanaged
+  header: ""
+  enable: true
+  display: true
+  priority: 0
+adachi.ban:
+  type: switch
+  auth: 2
+  scope: 3
+  mode: divided
+  onKey: ban
+  offKey: unban
+  header: ""
+  enable: true
+  display: true
+  priority: 0
+adachi.limit:
+  type: switch
+  auth: 2
+  scope: 3
+  mode: single
+  onKey: on
+  offKey: off
+  header: limit
+  enable: true
+  display: true
+  priority: 0
+adachi.interval:
+  type: order
+  auth: 2
+  scope: 3
+  headers:
+    - int
+  enable: true
+  display: true
+  priority: 0
+adachi.hot-update-config:
+  type: order
+  auth: 3
+  scope: 3
+  headers:
+    - refresh
+  enable: true
+  display: true
+  priority: 0
+adachi.hot-upgrade:
+  type: order
+  auth: 3
+  scope: 3
+  headers:
+    - upgrade
+  enable: true
+  display: true
+  priority: 0
+adachi.assets:
+  type: order
+  auth: 3
+  scope: 3
+  headers:
+    - assets
+  enable: true
+  display: true
+  priority: 0
+adachi.restart:
+  type: order
+  auth: 3
+  scope: 3
+  headers:
+    - restart
+  enable: true
+  display: true
+  priority: 0
+adachi.reload:
+  type: order
+  auth: 3
+  scope: 3
+  headers:
+    - reload
+  enable: true
+  display: true
+  priority: 0
+adachi.hot-upgrade-plugins:
+  type: order
+  auth: 3
+  scope: 3
+  headers:
+    - upgrade_plugins
+  enable: true
+  display: true
+  priority: 0
+chai.searchAll:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __查询
+    - __装备
+  enable: true
+  display: true
+  priority: 0
+chai.money:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __金价
+  enable: true
+  display: true
+  priority: 0
+chai.online:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __在线
+  enable: true
+  display: true
+  priority: 0
+silvery-star.echo:
+  type: order
+  auth: 1
+  scope: 3
+  headers:
+    - echo
+  enable: true
+  display: true
+  priority: 0
+tools.dice:
+  type: order
+  auth: 1
+  scope: 3
+  headers:
+    - dice
+  enable: true
+  display: true
+  priority: 0

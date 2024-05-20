@@ -73,6 +73,7 @@ export class Renderer implements ScreenshotRendererMethods {
 		selector: string = this.defaultSelector
 	): Promise<RenderResult> {
 		try {
+			console.log(selector,"selector")
 			const url: string = this.getURL( route, params );
 			const data: Buffer | string | void = await bot.renderer.screenshot( url, viewPort, selector, 'binary' );
 			if ( !data ) {
@@ -149,7 +150,7 @@ export class BasicRenderer implements RenderMethods {
 		}
 		try {
 			const browser = await puppeteer.launch( {
-				headless: "new",
+				headless: 'new',
 				args: [
 					"--no-sandbox",
 					"--disable-setuid-sandbox",
