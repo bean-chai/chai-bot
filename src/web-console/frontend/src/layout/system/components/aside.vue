@@ -5,7 +5,7 @@
 				<a class="logo-box" href="https://github.com/SilveryStar/Adachi-BOT" target="_blank">
 					<img src="/image/logo-text.png" alt="ERROR" draggable="false">
 <!--					<p>-->
-						<p class="login-title">Adachi-BOT</p>
+						<p class="login-title">chai-BOT</p>
 						<p class="login-desc">Admin</p>
 <!--					</p>-->
 				</a>

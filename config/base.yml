@@ -4,7 +4,7 @@ wsServer: 45.155.220.111:9081/event
 wsApiServer: 45.155.220.111:9081/api
 wsPort: 11451
 master: 2787922490
-inviteAuth: 2
+inviteAuth: 3
 logLevel: info
 atUser: false
 atBOT: false

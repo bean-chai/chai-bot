@@ -22,7 +22,7 @@ export default definePlugin( {
 			headers: [ "__查询","__装备" ],
 			regexps: [ "[\\u4e00-\\u9fa5]+", ".*" ],
 			main: "api/getZone",
-			detail: "查询方式：查询 南道拳豪（大区） 你算哪只傻兔兔灬（角色名）"
+			detail: "查询方式：\n查询 南道拳豪（大区） 你算哪只傻兔兔灬（角色名）"
 		},
 		{
 			type: "order",
@@ -31,7 +31,7 @@ export default definePlugin( {
 			headers: [ "__金价" ],
 			regexps: [ "[\\u4e00-\\u9fa5]+", "[1-3]"],
 			main: "api/money",
-			detail: "查询方式：金价 南道拳豪（大区） 1（1：DD，2：UU，3：各区商人）"
+			detail: "查询方式：\n金价 南道拳豪（大区） 1（1：DD，2：UU，3：各区商人）"
 		},
 		{
 			type: "order",
@@ -40,7 +40,7 @@ export default definePlugin( {
 			headers: [ "__在线" ],
 			regexps: [ "[\\u4e00-\\u9fa5]+", ".*" ],
 			main: "api/online",
-			detail: "查询方式：在线 南道拳豪（大区） 你算哪只傻兔兔灬（角色名）"
+			detail: "查询方式：\n在线 南道拳豪（大区） 你算哪只傻兔兔灬（角色名）"
 		},
 	],
 	server: {

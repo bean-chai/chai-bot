@@ -2,7 +2,7 @@
 	<div class="footer-view">
 		<div class="footer-content">
 			<span v-if="!isMobile">MIT Licensed | </span>
-			<span>Adachi管理面板 &copy;{{ currentYear }} SilveryStar</span>
+			<span>chaichai-BOT管理面板 &copy;{{ currentYear }} chaichai</span>
 		</div>
 	</div>
 </template>

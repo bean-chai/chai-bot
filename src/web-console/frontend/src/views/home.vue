@@ -1,7 +1,7 @@
 <template>
 	<div class="table-container fix-height">
 			<div class="home-content">
-				<p class="titleText">Hi~ 欢迎使用 Adachi-BOT 网页控制台</p>
+				<p class="titleText">Hi~ 欢迎使用 chaichai-BOT 网页控制台</p>
 				<p>这是一个正在进行初步测试的功能模块 (ノへ￣、)</p>
 				<p>本功能旨在简化指令式繁琐的管理模式</p>
 				<p>为用户提供更直观更简便的管理体验!</p>

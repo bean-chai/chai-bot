@@ -149,15 +149,6 @@ chai.online:
   enable: true
   display: true
   priority: 0
-silvery-star.echo:
-  type: order
-  auth: 1
-  scope: 3
-  headers:
-    - echo
-  enable: true
-  display: true
-  priority: 0
 tools.dice:
   type: order
   auth: 1

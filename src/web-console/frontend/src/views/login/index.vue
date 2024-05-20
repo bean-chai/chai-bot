@@ -1,7 +1,7 @@
 <template>
 	<div class="login-base">
 		<header class="login-header">
-			<h3>Adachi-Admin</h3>
+			<h3>chaichai-Admin</h3>
 		</header>
 		<main class="login-main">
 			<div class="login-main-content">
@@ -22,7 +22,7 @@
 		</main>
 		<footer class="login-footer">
 			<span v-if="!isMobile">MIT Licensed | </span>
-			<span>Adachi管理面板 &copy;{{ currentYear }} SilveryStar</span>
+			<span>chaichai管理面板 &copy;{{ currentYear }} chaichai</span>
 		</footer>
 	</div>
 </template>
