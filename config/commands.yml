@@ -149,6 +149,33 @@ chai.online:
   enable: true
   display: true
   priority: 0
+chai.tips:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __小道消息
+  enable: true
+  display: true
+  priority: 0
+chai.strategy:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __悬赏
+  enable: true
+  display: true
+  priority: 0
+chai.entry:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __词条
+  enable: true
+  display: true
+  priority: 0
 tools.dice:
   type: order
   auth: 1

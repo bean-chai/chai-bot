@@ -118,6 +118,7 @@ export default class MsgManagement implements MsgManagementMethod {
 				}
 				
 				const sendRes = await client.sendGroupMsg( groupID, content );
+				console.log(sendRes,"sendRessendRes")
 				if ( sendRes.retcode === 0 ) {
 					return sendRes.data;
 				}

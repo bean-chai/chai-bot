@@ -3,6 +3,10 @@ import { Renderer } from "@/modules/renderer";
 import * as r from "./routes";
 import { Router } from "express";
 import { definePlugin } from "@/modules/plugin";
+import { GroupIncreaseNoticeEvent, GroupRecallNoticeEvent, segment } from "@/modules/lib";
+import bot from "ROOT";
+import { MessageType } from "@/modules/message";
+import BaseClient from "@/modules/lib/core/base-client/base";
 
 const help: OrderConfig = {
 	type: "order",
@@ -43,6 +47,15 @@ const serverRouters: Record<string, Router> = {
 
 export let renderer: Renderer;
 
+function sendGroupMsg(data:GroupIncreaseNoticeEvent) {
+	// 虎牙隐藏定制需求
+	if(data.group_id === 892266970) {
+		const sendMessageFunc = bot.message.getSendMessageFunc( data.user_id, MessageType.Group, 892266970 );
+		const aa = sendMessageFunc(['请注意：进群请修改马甲：\n拾忆 灵剑 虎牙丶隐藏\nYY交流组队（下单）频道：76728009'],true)
+		
+	}
+}
+
 export default definePlugin( {
 	name: "help",
 	cfgList: [ help, detail, call ],
@@ -58,5 +71,14 @@ export default definePlugin( {
 	mounted( params ) {
 		/* 未启用卡片帮助时不启动服务 */
 		renderer = params.renderRegister( "#app", "views" );
+		// Client.on("notice.group.member_increase", data => {
+		// 	console.log(data,"data111111")
+		// })
+		params.client.on('notice.group.member_increase', sendGroupMsg)
+		
+		
+	},
+	unmounted(params) {
+		params.client.off('notice.group.member_increase', sendGroupMsg)
 	}
 } );

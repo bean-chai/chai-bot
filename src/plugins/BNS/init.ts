@@ -13,34 +13,52 @@ const serverRouters: Record<string, Router> = {
 }
 
 export default definePlugin( {
-	name: "灵灵",
+	name: "灵灵-正式服",
 	cfgList: [
 		{
 			type: "order",
 			cmdKey: "chai.searchAll",
-			desc: [ "查询装备", "[大区] [角色名]" ],
+			desc: [ "查询装备", "[大区全名] [角色全名]" ],
 			headers: [ "__查询","__装备" ],
 			regexps: [ "[\\u4e00-\\u9fa5]+", ".*" ],
 			main: "api/getZone",
-			detail: "查询方式：\n查询 南道拳豪（大区） 你算哪只傻兔兔灬（角色名）"
+			detail: "查询方式：\n查询 南道拳豪（大区全名） 你算哪只傻兔兔灬（角色全名）"
 		},
 		{
 			type: "order",
 			cmdKey: "chai.money",
-			desc: [ "金价", "[大区] [渠道(1-3)]" ],
+			desc: [ "金价", "[大区全名] [渠道(1-3)]" ],
 			headers: [ "__金价" ],
 			regexps: [ "[\\u4e00-\\u9fa5]+", "[1-3]"],
 			main: "api/money",
-			detail: "查询方式：\n金价 南道拳豪（大区） 1（1：DD，2：UU，3：各区商人）"
+			detail: "查询方式：\n金价 南道拳豪（大区全名） 1（1：DD，2：UU，3：各区商人）"
 		},
 		{
 			type: "order",
 			cmdKey: "chai.online",
-			desc: [ "在线情况", "[大区] [角色名]" ],
+			desc: [ "在线情况", "[大区全名] [角色全名]" ],
 			headers: [ "__在线" ],
 			regexps: [ "[\\u4e00-\\u9fa5]+", ".*" ],
 			main: "api/online",
-			detail: "查询方式：\n在线 南道拳豪（大区） 你算哪只傻兔兔灬（角色名）"
+			detail: "查询方式：\n在线 南道拳豪（大区全名） 你算哪只傻兔兔灬（角色全名）"
+		},
+		{
+			type: "order",
+			cmdKey: "chai.tips",
+			desc: [ "小道消息", "" ],
+			headers: [ "__小道消息" ],
+			regexps: [],
+			main: "api/tips",
+			detail: "查询方式：\n小道消息"
+		},
+		{
+			type: "order",
+			cmdKey: "chai.strategy",
+			desc: [ "悬赏攻略", "[boss全名]" ],
+			headers: [ "__悬赏" ],
+			regexps: ["[\\u4e00-\\u9fa5]+"],
+			main: "api/strategy",
+			detail: "查询方式：\n悬赏 塔尔卡（boss全名）"
 		},
 	],
 	server: {

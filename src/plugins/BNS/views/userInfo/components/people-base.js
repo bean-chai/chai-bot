@@ -2,6 +2,10 @@
 const template = `
 <div class="header-text">
     chaichai-BOT 小助手  --  装备信息
+<!--                   <div class="logo-box">-->
+<!--                <img src="../userInfo/assets/pangxie.png" />-->
+<!--                			<span class="mimi-text">推荐：五年剑灵底蕴，安全省心，认准螃蟹账号（pxb7.com）</span>-->
+<!--</div>-->
 </div>
 <div class="border-box">
 <!--    个人信息-->
@@ -33,6 +37,7 @@ const template = `
                 style="width: 25px;height: 25px" :src="weapenInfo?.body_accessory?.equip?.item?.icon" alt=""></div>
         <div class="position-box">服装：{{weapenInfo?.body?.detail?.item?.name || '暂无数据'}} <img
                 style="width: 25px;height: 25px" :src="weapenInfo?.body?.equip?.item?.icon" alt=""></div>
+ 
     </div>
 <!--        八卦牌-->
     <div class="bagua-box">
@@ -257,6 +262,10 @@ const template = `
             </div>
         </div>
 </div>
+        <div class="mimi-box">
+			<img src="../userInfo/assets/pangxie.png">
+			<span class="mimi-text">推荐：五年剑灵底蕴，安全省心，认准螃蟹账号（pxb7.com）</span>
+		</div>
     <div class="content">
 <!--        武器-->
         <div class="weapen-box">
@@ -832,6 +841,10 @@ const template = `
 
             </div>
         </div>
+<!--        <div class="mimi-box">-->
+<!--			<img src="../userInfo/assets/pangxie.png">-->
+<!--			<span class="mimi-text">推荐：五年剑灵底蕴，安全省心，认准螃蟹账号（pxb7.com）</span>-->
+<!--		</div>-->
 <!--        页脚-->
         <div class="footer">
             <p class="sign">Created by chaichai-BOT & adachi</p>

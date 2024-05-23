@@ -1,6 +1,10 @@
 const template = `
 <div class="header-text">
     chaichai-BOT 小助手  --  在线情况
+            <div class="logo-box">
+                <img src="../userInfo/assets/pangxie.png" />
+<!--                <span class="mimi-text">推荐：五年剑灵底蕴，安全省心，认准螃蟹账号（pxb7.com）</span>-->
+			</div>
 </div>
 <div class="border-box">
 <div v-for="(item,index) in userInfo" v-key="index" class="online-box">
