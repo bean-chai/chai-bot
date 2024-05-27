@@ -15,6 +15,24 @@ export default definePlugin( {
 			regexps: [ "[\\u4e00-\\u9fa5]+" ],
 			main: "api/entry",
 			detail: "查询方式：\n词条 气功（职业全名）"
+		},
+		{
+			type: "order",
+			cmdKey: "chai.outSide",
+			desc: [ "野外boss", "[boss全名]" ],
+			headers: [ "__野外" ],
+			regexps: ["[\\u4e00-\\u9fa5]+"],
+			main: "api/strategy",
+			detail: "查询方式：\n野外 千年灵妖（boss全名）"
+		},
+		{
+			type: "order",
+			cmdKey: "chai.timetips",
+			desc: [ "怀旧服小道消息", "" ],
+			headers: [ "__怀旧服小道消息" ],
+			regexps: [],
+			main: "api/tips",
+			detail: "查询方式：\n怀旧服小道消息"
 		}
 	],
 	publicDirs: [ "/people", "views", "assets" ],

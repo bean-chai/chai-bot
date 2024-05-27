@@ -1,0 +1,71 @@
+// /src/plugins/example/init.ts
+import { Renderer } from "@/modules/renderer";
+import { definePlugin } from "@/modules/plugin";
+import express, { Router } from "express";
+import * as r from "./routes";
+
+export let renderer: Renderer;
+
+const serverRouters: Record<string, Router> = {
+	"/api/getWeather": r.Weather,
+
+}
+
+export default definePlugin( {
+	name: "生活小助手",
+	cfgList: [
+		{
+			type: "order",
+			cmdKey: "chai.weather",
+			desc: [ "城市天气", "[城市]" ],
+			headers: [ "__天气" ],
+			regexps: [ "[\\u4e00-\\u9fa5]+" ],
+			main: "api/weather",
+			detail: "查询方式：\n天气 重庆（城市）"
+		},
+		// {
+		// 	type: "order",
+		// 	cmdKey: "chai.money",
+		// 	desc: [ "金价", "[大区全名] [渠道(1-3)]" ],
+		// 	headers: [ "__金价" ],
+		// 	regexps: [ "[\\u4e00-\\u9fa5]+", "[1-3]"],
+		// 	main: "api/money",
+		// 	detail: "查询方式：\n金价 南道拳豪（大区全名） 1（1：DD，2：UU，3：各区商人）"
+		// },
+		// {
+		// 	type: "order",
+		// 	cmdKey: "chai.online",
+		// 	desc: [ "在线情况", "[大区全名] [角色全名]" ],
+		// 	headers: [ "__在线" ],
+		// 	regexps: [ "[\\u4e00-\\u9fa5]+", ".*" ],
+		// 	main: "api/online",
+		// 	detail: "查询方式：\n在线 南道拳豪（大区全名） 你算哪只傻兔兔灬（角色全名）"
+		// },
+		// {
+		// 	type: "order",
+		// 	cmdKey: "chai.tips",
+		// 	desc: [ "小道消息", "" ],
+		// 	headers: [ "__小道消息" ],
+		// 	regexps: [],
+		// 	main: "api/tips",
+		// 	detail: "查询方式：\n小道消息"
+		// },
+		// {
+		// 	type: "order",
+		// 	cmdKey: "chai.strategy",
+		// 	desc: [ "悬赏攻略", "[boss全名]" ],
+		// 	headers: [ "__悬赏" ],
+		// 	regexps: ["[\\u4e00-\\u9fa5]+"],
+		// 	main: "api/strategy",
+		// 	detail: "查询方式：\n悬赏 塔尔卡（boss全名）"
+		// },
+	],
+	server: {
+		routers: serverRouters
+	},
+	publicDirs: [ "/people", "views", "assets" ],
+	async mounted( param ) {
+		renderer = param.renderRegister( ".width233", "" );
+		
+	},
+} )

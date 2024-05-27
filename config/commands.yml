@@ -176,6 +176,33 @@ chai.entry:
   enable: true
   display: true
   priority: 0
+chai.outSide:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __野外
+  enable: true
+  display: true
+  priority: 0
+chai.timetips:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __怀旧服小道消息
+  enable: true
+  display: true
+  priority: 0
+chai.weather:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __天气
+  enable: true
+  display: true
+  priority: 0
 tools.dice:
   type: order
   auth: 1

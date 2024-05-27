@@ -1,0 +1,181 @@
+.header-text {
+	position: relative;
+	z-index: 99999;
+	text-align: left;
+	font-size: 38px;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+.border-box {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100%;
+	border: 2px solid #ccc;
+	border-radius: 20px;
+	position: relative;
+	z-index: 9999;
+	color: #fff;
+	background: rgba(255,255,255,0.4);
+}
+.user-info {
+	width: 45%;
+	text-align: left;
+	padding: 20px 0 20px 30px;
+	/*background: url("../assets/bg3.jpg");*/
+	/*background-size: cover;*/
+	/*border-radius: 20px;*/
+	/*margin-right: 20px;*/
+}
+
+/*.user-info::before {*/
+/*	content: "";*/
+/*	position: absolute;*/
+/*	z-index: 0;*/
+/*	top: 0;*/
+/*	left: 0;*/
+/*	width: 45%;*/
+/*	height: 100%;*/
+/*	background-color: rgba(0, 0, 0, 0.3);*/
+/*	backdrop-filter: blur(4px);*/
+/*	border-radius: 20px;*/
+/*}*/
+.position-box {
+	position: relative;
+	z-index: 999999;
+}
+.user-info div {
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.user-name {
+	font-size: 28px !important;
+	margin-bottom: 20px !important;
+}
+.bagua-box {
+	width: 56%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px 20px 0 0;
+ }
+.bagua-item {
+	width: 47%;
+	height: 152px;
+	border: 2px solid #ccc;
+	border-radius: 20px;
+	text-align: center;
+	padding: 0 0 10px 0;
+}
+.bagua-title {
+	padding: 5px;
+	border-bottom: 2px solid #ccc;
+	text-align: center;
+	font-size: 18px;
+
+}
+.bagua-list {
+	padding: 0 60px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+}
+.content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.weapen-box {
+	width: 48%;
+	position: relative;
+	z-index: 999999;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.baoshi-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 20px;
+	font-size: 18px;
+}
+.baoshi-box1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	font-size: 18px;
+}
+.baoshi-box1 span {
+	width: 50%;
+}
+.weapen-item {
+	width: 100%;
+	/*height: 150px;*/
+	/*min-height: 185px;*/
+	height: 100%;
+	border: 2px solid #ccc;
+	border-radius: 20px;
+	text-align: center;
+	background: rgba(255,255,255,0.4);
+
+}
+.weapen-title {
+	padding: 5px;
+	border-bottom: 2px solid #ccc;
+	text-align: center;
+	font-size: 18px;
+}
+.finger-box {
+	width: 48%;
+	position: relative;
+	z-index: 999999;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.weapen-list {
+	padding: 0 100px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+}
+.mimi-box {
+	display: flex;
+	/*width: 100%;*/
+	position: relative;
+	z-index: 99999;
+	border-radius: 20px;
+	overflow: hidden;
+	margin: 0 auto;
+	background: rgba(255,255,255,0.4);
+	border: 2px solid #ccc;
+	padding: 20px 10px;
+	/*margin-bottom: 10px;*/
+	align-items: center;
+	margin-top: 30px;
+}
+.mimi-box img {
+	width: 18%;
+	margin-left: 60px;
+}
+.mimi-text {
+	color: #fff;
+	font-size: 24px;
+	margin-left: 100px;
+}
+.footer {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 550;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+}

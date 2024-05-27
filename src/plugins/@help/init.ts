@@ -71,9 +71,7 @@ export default definePlugin( {
 	mounted( params ) {
 		/* 未启用卡片帮助时不启动服务 */
 		renderer = params.renderRegister( "#app", "views" );
-		// Client.on("notice.group.member_increase", data => {
-		// 	console.log(data,"data111111")
-		// })
+
 		params.client.on('notice.group.member_increase', sendGroupMsg)
 		
 		

@@ -48,7 +48,10 @@ export default defineDirective( "order", async ( { sendMessage, messageData, mat
 		'\n' +
 		'7.推出新箱子神鹿箱，出处未知\n' +
 		'\n' +
-		'相关图片正在发送中~'
+		'相关图片正在发送中~'+
+		'\n' +
+		'\n' +
+		'推荐：五年剑灵底蕴，安全省心，认准螃蟹账号（pxb7.com）'
 	await sendMessage(tipsZone)
 	let url = ''
 	for ( let i = 0; i<7;i++ ) {

@@ -27,11 +27,11 @@ export default definePlugin( {
 		{
 			type: "order",
 			cmdKey: "chai.money",
-			desc: [ "金价", "[大区全名] [渠道(1-3)]" ],
+			desc: [ "金价", "[大区全名]" ],
 			headers: [ "__金价" ],
-			regexps: [ "[\\u4e00-\\u9fa5]+", "[1-3]"],
+			regexps: [ "[\\u4e00-\\u9fa5]+"],
 			main: "api/money",
-			detail: "查询方式：\n金价 南道拳豪（大区全名） 1（1：DD，2：UU，3：各区商人）"
+			detail: "查询方式：\n金价 南道拳豪（大区全名）"
 		},
 		{
 			type: "order",
