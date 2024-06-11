@@ -1,4 +1,4 @@
-import express from "express";
+import express, { response } from "express";
 import bot from "ROOT";
 import { MessageType } from "@/modules/message";
 import zoneList from "@/utils/zoneList"
@@ -22,7 +22,6 @@ export default express.Router().get( "/", async ( req: {
 			return response.json();
 		} )
 		.then( async ( e ) => {
-			console.log(e,"eee")
 			if ( e.code === 200 ) {
 				res.send( { weather: e } )
 			} else {

@@ -9,6 +9,15 @@ export default definePlugin( {
 	cfgList: [
 		{
 			type: "order",
+			cmdKey: "chai.oldMoney",
+			desc: [ "怀旧服金价", "[区服全名]" ],
+			headers: [ "__怀旧金价" ],
+			regexps: [ "[\\u4e00-\\u9fa5]+"],
+			main: "api/money",
+			detail: "查询方式：\n金价 大漠孤烟（区服全名）"
+		},
+		{
+			type: "order",
 			cmdKey: "chai.entry",
 			desc: [ "词条推荐", "[职业全名]" ],
 			headers: [ "__词条" ],

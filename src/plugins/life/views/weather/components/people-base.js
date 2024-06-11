@@ -2,7 +2,7 @@ const template = `
 <div class="header-text">
     chaichai-BOT 小助手 -- 天气
     <div class="logo-box">
-        <img src="../userInfo/assets/pangxie.png" />
+        <img src="../weather/assets/pangxie.png" />
     </div>
 </div>
 

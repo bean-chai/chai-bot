@@ -26,6 +26,7 @@ export default defineDirective( "order", async ( { sendMessage, messageData, mat
 		'万魂灵妖': 'wanhun',
 		'洪连': 'honglian',
 		'敌万夫': 'diwan',
+		'巨蛙': 'juwa'
 	}
 	
 	if ( matchResult.match[0] !== '' ) {

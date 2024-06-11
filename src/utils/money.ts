@@ -1,4 +1,5 @@
 let moneyList;
+
 export default moneyList = {
 	dd: {
 		'月华神': 'https://www.dd373.com/s-5eu4fw-c-84476u-74p2qe-jupdh6.html',

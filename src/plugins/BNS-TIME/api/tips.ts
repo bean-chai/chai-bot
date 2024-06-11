@@ -15,19 +15,19 @@ export default defineDirective( "order", async ( { sendMessage, messageData, mat
 	
 	const tipsZone = '' +
 		'怀旧服小道消息\n' +
-		'一、5.29推出极限挑战副本（被侵蚀的螺旋迷宫）\n' +
-		// '\t示例参数：\n' +
-		// '\t\t生命：148700\n' +
-		// '\t\t治疗：4615\n' +
-		// '\t\t防御：1958\n' +
-		// '\t\t伤害减免：189\n' +
-		// '\t\t战斗中恢复生命：1521\n' +
-		// '\n' +
-		// '\t\t分解：\n' +
-		// '\t\t精制炎虎水：1300个\n' +
-		// '\t\t守护水：300个\n' +
+		'1.血鲨八卦数值修改，全面提升超越永灵，这下不得不刷了\n' +
 		'\n' +
-		'二、6.12推出副本血浪鲨湾（东天霸）\n' +
+		'2.太尚门可以制作水月八卦图纸，直接变换血鲨八卦\n' +
+		'\n' +
+		'3.白雾势力商人可以用证明兑换水月八卦图纸\n' +
+		'\n' +
+		'4.万金堂活动开启，混沌无极获取途径移除\n' +
+		'\n' +
+		'5.水月饰品箱子新增紫色下三，老的图纸可以留着等着更新后兑换\n' +
+		'\n' +
+		'6.极限风雷武器目测必带灵魂石孔\n' +
+		'\n' +
+		'7.雷剑再次加强输出和获取雷龙的方式，刺剑通过技能衔接加强嘲讽\n' +
 		// '\t示例参数：\n' +
 		// '\t\t攻击：20\n' +
 		// '\t\t功力：550\n' +
@@ -39,6 +39,7 @@ export default defineDirective( "order", async ( { sendMessage, messageData, mat
 	await sendMessage(tipsZone)
 	let url = ''
 	// for ( let i = 0; i<7;i++ ) {
+	
 	// 	console.log(i,"ii")
 	// 	url = `/assets/tips/tips${i+1}.jpg`
 	// 	if(url) {
@@ -109,6 +110,8 @@ export default defineDirective( "order", async ( { sendMessage, messageData, mat
 	//
 	// 				return element?.screenshot( option );
 	//
+	
+	
 	// 			}, null,undefined)
 	// 			console.log(res,"ress")
 	// 			if ( res.code === 'ok' ) {

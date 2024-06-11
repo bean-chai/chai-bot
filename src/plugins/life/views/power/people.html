@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>标注图层-北京充电桩分布</title>
+	<style>
+		html,
+		body,
+		#map {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		.demo-title {
+			position: absolute;
+			top: 50px;
+			left: 50px;
+			z-index: 1;
+		}
+
+		.amap-info-window{
+			width: 150px;
+			background: #fff;
+			border-radius: 3px;
+			padding: 3px 7px;
+			box-shadow: 0 2px 6px 0 rgba(114, 124, 245, .5);
+			position: relative;
+			font-size: 12px;
+		}
+		h1 {
+			margin: 0;
+			color: #ACB3BB;
+		}
+
+		h3 {
+			font-weight: normal;
+			margin-top: 5px;
+			color: #8E939D;
+		}
+	</style>
+</head>
+
+<body>
+<div class="demo-title">
+	<h1>标注图层-北京充电桩分布</h1>
+	<h3>使用Loca数据源展示海量点标注</h3>
+</div>
+<div id="map"></div>
+<script src="https://webapi.amap.com/maps?v=2.0&key=834aca92eb92c09c418978e7b7e25cf7"></script>
+<script src="https://webapi.amap.com/loca?v=2.0.0&key=834aca92eb92c09c418978e7b7e25cf7"></script>
+<script>
+	var map = new AMap.Map('map', {
+		zoom: 13.12,
+		showLabel: false,
+		viewMode: '3D',
+		center: [116.316348, 39.992875],
+		mapStyle: 'amap://styles/28f5f1e7774710f2d218ab9ba738b444',
+	});
+
+	var loca = new Loca.Container({
+		map,
+	});
+
+	var labelsLayer = (window.labelsLayer = new Loca.LabelsLayer({
+		zooms: [10, 20],
+	}));
+
+	var geo = new Loca.GeoJSONSource({
+		url: 'https://a.amap.com/Loca/static/loca-v2/demos/mock_data/charging_pile.json',
+	});
+	labelsLayer.setSource(geo);
+
+	// labelsLayer.setStyle的配置项即AMap.LabelMarker的配置项
+	labelsLayer.setStyle({
+		icon: {
+			type: 'image',
+			image: 'https://a.amap.com/Loca/static/loca-v2/demos/mock_data/charging_pile.png',
+			size: [48, 75],
+			anchor: 'center',
+		},
+		text: {
+			// 每项配置都可使用回调函数来动态配置
+			content: (index, feat) => {
+				return feat.properties.name;
+			},
+			style: {
+				fontSize: 12,
+				fontWeight: 'normal',
+				fillColor: '#5CDE8E',
+				strokeColor: '#000',
+				strokeWidth: 2,
+			},
+			direction: 'bottom',
+		},
+		extData: (index, feat) => {
+			return feat.properties;
+		},
+	});
+	loca.add(labelsLayer);
+
+	labelsLayer.on('complete', () => {
+		var normalMarker = new AMap.Marker({
+			offset: [70, -15],
+		});
+		var labelMarkers = labelsLayer.getLabelsLayer().getAllOverlays();
+		for (let marker of labelMarkers) {
+			marker.on('mouseover', (e) => {
+				var position = e.data.data && e.data.data.position;
+
+				if (position) {
+					normalMarker.setContent(
+						'<div class="amap-info-window">地址：' + marker.getExtData().address + '</div>',
+					);
+					normalMarker.setPosition(position);
+					map.add(normalMarker);
+				}
+			});
+			marker.on('mouseout', () => {
+				map.remove(normalMarker);
+			});
+		}
+	});
+
+</script>
+</body>
+
+</html>

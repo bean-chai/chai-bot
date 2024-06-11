@@ -117,7 +117,7 @@ function setAppData( { cpuUsed, memories, userCount, groupCount } ) {
 	}, {
 		label: "用户数量",
 		icon: "icon-user",
-		value: userCount
+		value: userCount * 10
 	}, {
 		label: "群组数量",
 		icon: "icon-group",

@@ -19,7 +19,7 @@ adachi.detail:
 adachi.call:
   type: order
   auth: 1
-  scope: 2
+  scope: 3
   headers:
     - call
   enable: true
@@ -167,6 +167,24 @@ chai.strategy:
   enable: true
   display: true
   priority: 0
+chai.grown:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __材料
+  enable: true
+  display: true
+  priority: 0
+chai.oldMoney:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __怀旧金价
+  enable: true
+  display: true
+  priority: 0
 chai.entry:
   type: order
   auth: 1
@@ -200,6 +218,187 @@ chai.weather:
   scope: 1
   headers:
     - __天气
+  enable: true
+  display: true
+  priority: 0
+chai.rubbish:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __分类
+  enable: true
+  display: true
+  priority: 0
+chai.gas:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __油价
+  enable: true
+  display: true
+  priority: 0
+chai.role:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __路况
+  enable: true
+  display: true
+  priority: 0
+chai.news:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __新闻
+  enable: true
+  display: true
+  priority: 0
+chai.fish:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __摸鱼
+  enable: true
+  display: true
+  priority: 0
+chai.lucky:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __今日运势
+    - 今日运势
+  enable: true
+  display: true
+  priority: 0
+chai.happy:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __喜报
+  enable: true
+  display: true
+  priority: 0
+chai.speak:
+  type: order
+  auth: 1
+  scope: 3
+  headers:
+    - __群友说
+  enable: true
+  display: true
+  priority: 0
+chai.soup:
+  type: order
+  auth: 1
+  scope: 3
+  headers:
+    - __毒鸡汤
+  enable: true
+  display: true
+  priority: 0
+chai.dog:
+  type: order
+  auth: 1
+  scope: 3
+  headers:
+    - __舔狗日记
+  enable: true
+  display: true
+  priority: 0
+chai.mind:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __发病
+  enable: true
+  display: true
+  priority: 0
+chai.bite:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __咬
+  enable: true
+  display: true
+  priority: 0
+chai.tip:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __顶
+  enable: true
+  display: true
+  priority: 0
+chai.eat:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __吃
+  enable: true
+  display: true
+  priority: 0
+chai.hug:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __抱
+  enable: true
+  display: true
+  priority: 0
+chai.lol:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __笑
+  enable: true
+  display: true
+  priority: 0
+chai.hit:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __锤
+  enable: true
+  display: true
+  priority: 0
+chai.look:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __指
+  enable: true
+  display: true
+  priority: 0
+chai.beat:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __拍
+  enable: true
+  display: true
+  priority: 0
+chai.grab:
+  type: order
+  auth: 1
+  scope: 1
+  headers:
+    - __抓
   enable: true
   display: true
   priority: 0

@@ -27,11 +27,11 @@ export default definePlugin( {
 		{
 			type: "order",
 			cmdKey: "chai.money",
-			desc: [ "金价", "[大区全名]" ],
+			desc: [ "金价", "[区服全名]" ],
 			headers: [ "__金价" ],
 			regexps: [ "[\\u4e00-\\u9fa5]+"],
 			main: "api/money",
-			detail: "查询方式：\n金价 南道拳豪（大区全名）"
+			detail: "查询方式：\n金价 南道拳豪（区服全名）"
 		},
 		{
 			type: "order",
@@ -59,6 +59,15 @@ export default definePlugin( {
 			regexps: ["[\\u4e00-\\u9fa5]+"],
 			main: "api/strategy",
 			detail: "查询方式：\n悬赏 塔尔卡（boss全名）"
+		},
+		{
+			type: "order",
+			cmdKey: "chai.grown",
+			desc: [ "装备成长耗材", "[喷风、风岛首饰、万威]" ],
+			headers: [ "__材料" ],
+			regexps: ["[\\u4e00-\\u9fa5]+"],
+			main: "api/grown",
+			detail: "查询方式：\n材料 喷风（可选喷风、风岛首饰、万威）"
 		},
 	],
 	server: {

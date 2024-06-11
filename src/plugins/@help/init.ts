@@ -48,6 +48,10 @@ const serverRouters: Record<string, Router> = {
 export let renderer: Renderer;
 
 function sendGroupMsg(data:GroupIncreaseNoticeEvent) {
+	const sendMessageFunc1 = bot.message.getSendMessageFunc( data.user_id, MessageType.Group, data.group_id );
+	
+	const aa = sendMessageFunc1(['欢迎入群，发送"菜单"即可查看小助手指令'],true)
+	
 	// 虎牙隐藏定制需求
 	if(data.group_id === 892266970) {
 		const sendMessageFunc = bot.message.getSendMessageFunc( data.user_id, MessageType.Group, 892266970 );

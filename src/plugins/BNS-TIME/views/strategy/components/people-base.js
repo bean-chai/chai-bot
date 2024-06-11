@@ -10,7 +10,7 @@ const template = `
 <div class="boss-name">野外BOSS -- {{ userInfo[1] }}</div>
 <!--千年灵妖-->
 <div v-if="userInfo[0] === 'qiannian'">
-	<div class="box-text">野外boss-千魂灵妖（消耗疲劳），等待一定时间后会出</div>
+	<div class="box-text">野外boss-千年灵妖（消耗疲劳），等待一定时间后会出</div>
 	<div class="img-box">
 		<img src="../strategy/assets/qiannian/qiannian.JPG" alt="123">
 	</div>
@@ -19,6 +19,10 @@ const template = `
 	</div>
 	<div class="img-box">
 		<img src="../strategy/assets/qiannian/qiannian3.JPG" alt="123">
+	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/qiannian/qiannian4.JPG" alt="123">
 	</div>
 </div>
 <!--仇满天-->
@@ -33,6 +37,10 @@ const template = `
 	<div class="img-box">
 		<img src="../strategy/assets/chouman/chouman3.JPG" alt="123">
 	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/chouman/chouman4.JPG" alt="123">
+	</div>
 </div>
 <!--龇牙犬-->
 <div v-if="userInfo[0] === 'ciya'">
@@ -45,6 +53,10 @@ const template = `
 	</div>
 	<div class="img-box">
 		<img src="../strategy/assets/ciya/ciya3.JPG" alt="123">
+	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/ciya/ciya4.JPG" alt="123">
 	</div>
 </div>
 <!--金刚罗汉-->
@@ -62,6 +74,10 @@ const template = `
 	<div class="img-box">
 		<img src="../strategy/assets/jingang/jingang4.JPG" alt="123">
 	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/jingang/jingang5.JPG" alt="123">
+	</div>
 </div>
 <!--黄沙领主-->
 <div v-if="userInfo[0] === 'huangsha'">
@@ -75,10 +91,14 @@ const template = `
 	<div class="img-box">
 		<img src="../strategy/assets/huangsha/huangsha3.JPG" alt="123">
 	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/huangsha/huangsha4.JPG" alt="123">
+	</div>
 </div>
 <!--古力大仙-->
 <div v-if="userInfo[0] === 'guli'">
-	<div class="box-text">野外boss-古力大仙（不消耗疲劳），清够周围一定数量小怪会出</div>
+	<div class="box-text">野外boss-古力大仙（消耗疲劳），清够周围一定数量小怪会出</div>
 	<div class="img-box">
 		<img src="../strategy/assets/guli/guli.JPG" alt="123">
 	</div>
@@ -88,10 +108,14 @@ const template = `
 	<div class="img-box">
 		<img src="../strategy/assets/guli/guli3.JPG" alt="123">
 	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/guli/guli4.JPG" alt="123">
+	</div>
 </div>
 <!--黑神鸟-->
 <div v-if="userInfo[0] === 'heishen'">
-	<div class="box-text">野外boss-黑神鸟（不消耗疲劳），清够周围一定数量小怪会出</div>
+	<div class="box-text">野外boss-黑神鸟（消耗疲劳），清够周围一定数量小怪会出</div>
 	<div class="img-box">
 		<img src="../strategy/assets/heishen/heishen.JPG" alt="123">
 	</div>
@@ -101,10 +125,14 @@ const template = `
 	<div class="img-box">
 		<img src="../strategy/assets/heishen/heishen3.JPG" alt="123">
 	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/heishen/heishen4.JPG" alt="123">
+	</div>
 </div>
 <!--蛮骨沙魂-->
 <div v-if="userInfo[0] === 'mangu'">
-	<div class="box-text">野外boss-蛮骨沙魂（不消耗疲劳），清够周围一定数量小怪会出</div>
+	<div class="box-text">野外boss-蛮骨沙魂（消耗疲劳），清够周围一定数量小怪会出</div>
 	<div class="img-box">
 		<img src="../strategy/assets/mangu/mangu.JPG" alt="123">
 	</div>
@@ -113,6 +141,10 @@ const template = `
 	</div>
 	<div class="img-box">
 		<img src="../strategy/assets/mangu/mangu3.JPG" alt="123">
+	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/mangu/mangu4.JPG" alt="123">
 	</div>
 </div>
 <!--黑天照-->
@@ -127,10 +159,14 @@ const template = `
 	<div class="img-box">
 		<img src="../strategy/assets/heitian/heitian3.JPG" alt="123">
 	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/heitian/heitian4.JPG" alt="123">
+	</div>
 </div>
 <!--棕熊血牙-->
 <div v-if="userInfo[0] === 'zongxiong'">
-	<div class="box-text">野外boss-棕熊血牙（不消耗疲劳），清够周围一定数量小怪会出</div>
+	<div class="box-text">野外boss-棕熊血牙（消耗疲劳），清够周围一定数量小怪会出</div>
 	<div class="img-box">
 		<img src="../strategy/assets/zongxiong/zongxiong.JPG" alt="123">
 	</div>
@@ -140,10 +176,14 @@ const template = `
 	<div class="img-box">
 		<img src="../strategy/assets/zongxiong/zongxiong3.JPG" alt="123">
 	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/zongxiong/zongxiong4.JPG" alt="123">
+	</div>
 </div>
 <!--食海龙-->
 <div v-if="userInfo[0] === 'shihai'">
-	<div class="box-text">野外boss-食海龙（不消耗疲劳），击杀一只猪，等待一定时间后，把尸体放在供台上会吸引出来</div>
+	<div class="box-text">野外boss-食海龙（消耗疲劳），击杀一只猪，等待一定时间后，把尸体放在供台上会吸引出来</div>
 	<div class="img-box">
 		<img src="../strategy/assets/shihai/shihai.JPG" alt="123">
 	</div>
@@ -155,6 +195,10 @@ const template = `
 	</div>
 	<div class="img-box">
 		<img src="../strategy/assets/shihai/shihai4.JPG" alt="123">
+	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/shihai/shihai5.JPG" alt="123">
 	</div>
 </div>
 <!--黑鳍将军-->
@@ -169,10 +213,14 @@ const template = `
 	<div class="img-box">
 		<img src="../strategy/assets/heiqi/heiqi3.JPG" alt="123">
 	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/heiqi/heiqi4.JPG" alt="123">
+	</div>
 </div>
 <!--先师幽魂-->
 <div v-if="userInfo[0] === 'xianshi'">
-	<div class="box-text">野外boss-先师幽魂（不消耗疲劳），清够周围一定数量小怪会出</div>
+	<div class="box-text">野外boss-先师幽魂（消耗疲劳），清够周围一定数量小怪会出</div>
 	<div class="img-box">
 		<img src="../strategy/assets/xianshi/xianshi.JPG" alt="123">
 	</div>
@@ -181,6 +229,10 @@ const template = `
 	</div>
 	<div class="img-box">
 		<img src="../strategy/assets/xianshi/xianshi3.JPG" alt="123">
+	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/xianshi/xianshi4.JPG" alt="123">
 	</div>
 </div>
 <!--万魂灵妖-->
@@ -195,15 +247,23 @@ const template = `
 	<div class="img-box">
 		<img src="../strategy/assets/wanhun/wanhun3.JPG" alt="123">
 	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/wanhun/wanhun4.JPG" alt="123">
+	</div>
 </div>
 <!--洪连-->
 <div v-if="userInfo[0] === 'honglian'">
-	<div class="box-text">野外boss-洪连（不消耗疲劳），等待一定时间后会出</div>
+	<div class="box-text">野外boss-洪连（消耗疲劳），等待一定时间后会出</div>
 	<div class="img-box">
 		<img src="../strategy/assets/honglian/honglian.JPG" alt="123">
 	</div>
 	<div class="img-box">
 		<img src="../strategy/assets/honglian/honglian2.JPG" alt="123">
+	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/honglian/honglian3.JPG" alt="123">
 	</div>
 </div>
 <!--敌万夫-->
@@ -217,6 +277,27 @@ const template = `
 	</div>
 	<div class="img-box">
 		<img src="../strategy/assets/diwan/diwan3.JPG" alt="123">
+	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/diwan/diwan4.JPG" alt="123">
+	</div>
+</div>
+<!--巨蛙-->
+<div v-if="userInfo[0] === 'juwa'">
+	<div class="box-text">野外boss-巨蛙（消耗疲劳），等待一定时间后会出</div>
+	<div class="img-box">
+		<img src="../strategy/assets/juwa/juwa.JPG" alt="123">
+	</div>
+	<div class="img-box">
+		<img src="../strategy/assets/juwa/juwa2.JPG" alt="123">
+	</div>
+	<div class="img-box">
+		<img src="../strategy/assets/juwa/juwa3.JPG" alt="123">
+	</div>
+	<div class="box-text">战利品一览</div>
+	<div class="img-box">
+		<img src="../strategy/assets/juwa/juwa4.JPG" alt="123">
 	</div>
 </div>
 
