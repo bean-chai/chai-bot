@@ -17,7 +17,7 @@
 	position: relative;
 	z-index: 9999;
 	color: #fff;
-	background: rgba(255,255,255,0.4);
+	/*background: rgba(255,255,255,0.4);*/
 }
 .user-info {
 	width: 45%;
@@ -121,7 +121,7 @@
 	border: 2px solid #ccc;
 	border-radius: 20px;
 	text-align: center;
-	background: rgba(255,255,255,0.4);
+	/*background: rgba(255,255,255,0.4);*/
 
 }
 .weapen-title {
@@ -137,8 +137,17 @@
 	color: #fff;
 	margin-bottom: 20px;
 }
+.red-imp {
+	color: #ff8a9a;
+}
 .weapen-list {
 	padding: 0 100px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+}
+.weapen-list1 {
+	padding: 0 80px;
 	display: flex;
 	justify-content: space-between;
 	font-size: 18px;
@@ -151,7 +160,7 @@
 	border-radius: 20px;
 	overflow: hidden;
 	margin: 0 auto;
-	background: rgba(255,255,255,0.4);
+	/*background: rgba(255,255,255,0.4);*/
 	border: 2px solid #ccc;
 	padding: 20px 10px;
 	/*margin-bottom: 10px;*/

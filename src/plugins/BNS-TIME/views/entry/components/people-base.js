@@ -326,7 +326,7 @@ export default defineComponent( {
 					},
 					neck: {
 						name: '洪门三式',
-						fun: [ '斩影*远广/斩影*远', '暗影乱舞', '暗影移行', '1,2' ]
+						fun: [ '斩影*远', '暗影乱舞', '暗影移行', '1,2' ]
 					},
 					glove: {
 						name: '洪门三式',

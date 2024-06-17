@@ -165,15 +165,15 @@ export default definePlugin( {
 			main: "api/tip",
 			detail: "使用方式：\n顶@要顶的人"
 		},
-		{
-			type: "order",
-			cmdKey: "chai.eat",
-			desc: [ "吃", "" ],
-			headers: [ "__吃" ],
-			regexps: [ "\\[CQ:at,qq=\\d+.*]" ],
-			main: "api/eat",
-			detail: "使用方式：\n吃@要吃的人"
-		},
+		// {
+		// 	type: "order",
+		// 	cmdKey: "chai.eat",
+		// 	desc: [ "吃", "" ],
+		// 	headers: [ "__吃" ],
+		// 	regexps: [ "\\[CQ:at,qq=\\d+.*]" ],
+		// 	main: "api/eat",
+		// 	detail: "使用方式：\n吃@要吃的人"
+		// },
 		{
 			type: "order",
 			cmdKey: "chai.hug",
@@ -183,15 +183,15 @@ export default definePlugin( {
 			main: "api/hug",
 			detail: "使用方式：\n抱@要抱的人"
 		},
-		{
-			type: "order",
-			cmdKey: "chai.lol",
-			desc: [ "笑", "" ],
-			headers: [ "__笑" ],
-			regexps: [ "\\[CQ:at,qq=\\d+.*]" ],
-			main: "api/lol",
-			detail: "使用方式：\n笑@要笑的人"
-		},
+		// {
+		// 	type: "order",
+		// 	cmdKey: "chai.lol",
+		// 	desc: [ "笑", "" ],
+		// 	headers: [ "__笑" ],
+		// 	regexps: [ "\\[CQ:at,qq=\\d+.*]" ],
+		// 	main: "api/lol",
+		// 	detail: "使用方式：\n笑@要笑的人"
+		// },
 		{
 			type: "order",
 			cmdKey: "chai.hit",

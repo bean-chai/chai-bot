@@ -339,30 +339,12 @@ chai.tip:
   enable: true
   display: true
   priority: 0
-chai.eat:
-  type: order
-  auth: 1
-  scope: 1
-  headers:
-    - __吃
-  enable: true
-  display: true
-  priority: 0
 chai.hug:
   type: order
   auth: 1
   scope: 1
   headers:
     - __抱
-  enable: true
-  display: true
-  priority: 0
-chai.lol:
-  type: order
-  auth: 1
-  scope: 1
-  headers:
-    - __笑
   enable: true
   display: true
   priority: 0

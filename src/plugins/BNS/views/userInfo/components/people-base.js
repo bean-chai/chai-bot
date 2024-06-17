@@ -61,10 +61,10 @@ const template = `
                <div v-if="weapenInfo?.soulshield_1?.detail?.item_spirit !== null">
                    <div v-for="(item1,index1) in weapenInfo?.soulshield_1?.detail?.item_spirit?.abilities" v-key="index1">
                        <div class="bagua-list">
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name || '暂无数据'}}：
                            </span>
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                            </span>
                         </div>
@@ -88,10 +88,10 @@ const template = `
                <div v-if="weapenInfo?.soulshield_2?.detail?.item_spirit !== null">
                    <div v-for="(item1,index1) in weapenInfo?.soulshield_2?.detail?.item_spirit?.abilities" v-key="index1">
                        <div class="bagua-list">
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name || '暂无数据'}}：
                            </span>
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                            </span>
                         </div>
@@ -115,10 +115,10 @@ const template = `
                <div v-if="weapenInfo?.soulshield_3?.detail?.item_spirit !== null">
                    <div v-for="(item1,index1) in weapenInfo?.soulshield_3?.detail?.item_spirit?.abilities" v-key="index1">
                        <div class="bagua-list">
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name || '暂无数据'}}：
                            </span>
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                            </span>
                         </div>
@@ -142,10 +142,10 @@ const template = `
                <div v-if="weapenInfo?.soulshield_4?.detail?.item_spirit !== null">
                    <div v-for="(item1,index1) in weapenInfo?.soulshield_4?.detail?.item_spirit?.abilities" v-key="index1">
                        <div class="bagua-list">
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name || '暂无数据'}}：
                            </span>
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                            </span>
                         </div>
@@ -169,10 +169,10 @@ const template = `
                <div v-if="weapenInfo?.soulshield_5?.detail?.item_spirit !== null">
                    <div v-for="(item1,index1) in weapenInfo?.soulshield_5?.detail?.item_spirit?.abilities" v-key="index1">
                        <div class="bagua-list">
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name || '暂无数据'}}：
                            </span>
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                            </span>
                         </div>
@@ -196,10 +196,10 @@ const template = `
                <div v-if="weapenInfo?.soulshield_6?.detail?.item_spirit !== null">
                    <div v-for="(item1,index1) in weapenInfo?.soulshield_6?.detail?.item_spirit?.abilities" v-key="index1">
                        <div class="bagua-list">
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name || '暂无数据'}}：
                            </span>
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                            </span>
                         </div>
@@ -223,10 +223,10 @@ const template = `
                <div v-if="weapenInfo?.soulshield_7?.detail?.item_spirit !== null">
                    <div v-for="(item1,index1) in weapenInfo?.soulshield_7?.detail?.item_spirit?.abilities" v-key="index1">
                        <div class="bagua-list">
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name || '暂无数据'}}：
                            </span>
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                            </span>
                         </div>
@@ -250,10 +250,10 @@ const template = `
                <div v-if="weapenInfo?.soulshield_8?.detail?.item_spirit !== null">
                    <div v-for="(item1,index1) in weapenInfo?.soulshield_8?.detail?.item_spirit?.abilities" v-key="index1">
                        <div class="bagua-list">
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name || '暂无数据'}}：
                            </span>
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                            </span>
                         </div>
@@ -300,10 +300,10 @@ const template = `
                <div v-if="weapenInfo?.hand?.detail?.item_spirit !== null">
                    <div v-for="(item1,index1) in weapenInfo?.hand?.detail?.item_spirit?.abilities" v-key="index1">
                        <div class="weapen-list">
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name || '暂无数据'}}：
                            </span>
-                           <span>
+                           <span class="red-imp">
                                {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                            </span>
                         </div>
@@ -358,10 +358,10 @@ const template = `
                    <div v-if="weapenInfo?.finger_left?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.finger_left?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
@@ -398,10 +398,10 @@ const template = `
                    <div v-if="weapenInfo?.ear_left?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.ear_left?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
@@ -438,10 +438,10 @@ const template = `
                    <div v-if="weapenInfo?.neck?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.neck?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
@@ -478,10 +478,10 @@ const template = `
                    <div v-if="weapenInfo?.bracelet?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.bracelet?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
@@ -518,10 +518,10 @@ const template = `
                    <div v-if="weapenInfo?.belt?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.belt?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
@@ -558,10 +558,10 @@ const template = `
                    <div v-if="weapenInfo?.gloves?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.gloves?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
@@ -598,10 +598,10 @@ const template = `
                    <div v-if="weapenInfo?.swift_badge?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.swift_badge?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
@@ -638,10 +638,10 @@ const template = `
                    <div v-if="weapenInfo?.soul_badge?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.soul_badge?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
@@ -678,10 +678,10 @@ const template = `
                    <div v-if="weapenInfo?.soul?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.soul?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
@@ -718,10 +718,10 @@ const template = `
                    <div v-if="weapenInfo?.soul_2?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.soul_2?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
@@ -758,32 +758,14 @@ const template = `
                    <div v-if="weapenInfo?.pet?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.pet?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
                        </div>
-                   </div>
-               </div>
-        </div>
-<!--         &lt;!&ndash;守护宝石&ndash;&gt; -->
-        <div class="finger-box">
-        <div class="weapen-item">
-                   <div class="weapen-title"> 守护宝石</div>
-        <div class="baoshi-box" v-if="weapenInfo?.pet?.detail?.added_enchant_gems !== null">
-                       <span v-for="(item3, index3) in weapenInfo?.pet?.detail?.added_enchant_gems" v-key="index3">
-                           <img style="width: 25px;height: 25px;vertical-align:middle;" :src="item3?.icon" alt="">
-                           {{item3?.name}}
-                       </span>
-                   </div>
-                   <div class="baoshi-box1" v-if="weapenInfo?.pet?.detail?.added_gems !== null">
-                       <span v-for="(item3, index3) in weapenInfo?.pet?.detail?.added_gems" v-key="index3">
-                           <img style="width: 25px;height: 25px;vertical-align:middle;" :src="item3?.icon" alt="">
-                           {{item3?.name}}
-                       </span>
                    </div>
                </div>
         </div>
@@ -816,10 +798,10 @@ const template = `
                    <div v-if="weapenInfo?.nova?.detail?.item_spirit !== null">
                        <div v-for="(item1,index1) in weapenInfo?.nova?.detail?.item_spirit?.abilities" v-key="index1">
                            <div class="weapen-list">
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name || '暂无数据'}}：
                                </span>
-                               <span>
+                               <span class="red-imp">
                                    {{item1?.name === '功力伤害率' ? item1?.value / 10 + '%' : item1?.value}}
                                </span>
                            </div>
@@ -827,17 +809,35 @@ const template = `
                    </div>
                </div>
         </div>
+        <!--         &lt;!&ndash;守护宝石&ndash;&gt; -->
+        <div class="finger-box">
+        <div class="weapen-item">
+                   <div class="weapen-title">守护宝石</div>
+        <div class="baoshi-box" v-if="weapenInfo?.pet?.detail?.added_enchant_gems !== null">
+                       <span v-for="(item3, index3) in weapenInfo?.pet?.detail?.added_enchant_gems" v-key="index3">
+                           <img style="width: 25px;height: 25px;vertical-align:middle;" :src="item3?.icon" alt="">
+                           {{item3?.name}}
+                       </span>
+                   </div>
+                   <div class="baoshi-box1" v-if="weapenInfo?.pet?.detail?.added_gems !== null">
+                       <span v-for="(item3, index3) in weapenInfo?.pet?.detail?.added_gems" v-key="index3">
+                           <img style="width: 25px;height: 25px;vertical-align:middle;" :src="item3?.icon" alt="">
+                           {{item3?.name}}
+                       </span>
+                   </div>
+               </div>
+        </div>
 <!--        作者留言 -->
         <div class="finger-box">
             <div class="weapen-item">
                 <div class="weapen-title">作者留言</div>
-                <div class="weapen-list" style="margin-bottom: 5px;margin-top: 10px">
+                <div class="weapen-list1" style="margin-bottom: 5px;margin-top: 10px">
                     <span>bot作者：</span>
                     <span>电二（南道拳豪）你算哪只傻兔兔灬</span>
                 </div>
-                <div class="weapen-list" style="margin-bottom: 5px">如果你在使用过程中有任何建议、意见、合作意向</div>
-                <div class="weapen-list" style="margin-bottom: 5px">请联系bot作者，我将不胜感激 ╰(￣ω￣ｏ)</div>
-                <div class="weapen-list">作者QQ：2787922490（柴柴）</div>
+                <div class="weapen-list1" style="margin-bottom: 5px">如果你在使用过程中有任何建议、意见、合作意向</div>
+                <div class="weapen-list1" style="margin-bottom: 5px">请联系bot作者，我将不胜感激 ╰(￣ω￣ｏ)</div>
+                <div class="weapen-list1">作者QQ：2787922490（柴柴）</div>
 
             </div>
         </div>
