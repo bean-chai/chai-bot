@@ -63,11 +63,11 @@ export default definePlugin( {
 		{
 			type: "order",
 			cmdKey: "chai.grown",
-			desc: [ "装备成长耗材", "[喷风、风岛首饰、万威]" ],
+			desc: [ "装备成长耗材", "[喷风、风岛首饰、万威、狂虎、盛放、海意]" ],
 			headers: [ "__材料" ],
 			regexps: ["[\\u4e00-\\u9fa5]+"],
 			main: "api/grown",
-			detail: "查询方式：\n材料 喷风（可选喷风、风岛首饰、万威）"
+			detail: "查询方式：\n材料 喷风（可选喷风、风岛首饰、万威、狂虎、盛放、海意）"
 		},
 	],
 	server: {

@@ -135,11 +135,23 @@ const upgrade_plugins: OrderConfig = {
 		"不指定插件名将更新全部支持热更新的插件"
 }
 
+const search: OrderConfig = {
+	type: "order",
+	cmdKey: "chai.searchUrl",
+	desc: [ "活动链接","1-31" ],
+	headers: [ "search" ],
+	regexps: [ "([\u4E00-\u9FA5\\w\\-]+)?" ],
+	auth: AuthLevel.Master,
+	main: "searchUrl",
+	detail: ""
+}
+
+
 export default definePlugin( {
 	name: "management",
 	cfgList: [
 		manager, ban, limit, interval,
 		refresh, upgrade, assets, restart,
-		reload, upgrade_plugins
+		reload, upgrade_plugins,search
 	]
 } );

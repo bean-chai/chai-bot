@@ -9,5 +9,5 @@ logLevel: info
 atUser: false
 atBOT: false
 addFriend: true
-apiTimeout: 20000
+apiTimeout: 80000
 renderPort: 80

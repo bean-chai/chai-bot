@@ -121,6 +121,15 @@ adachi.hot-upgrade-plugins:
   enable: true
   display: true
   priority: 0
+chai.searchUrl:
+  type: order
+  auth: 3
+  scope: 3
+  headers:
+    - search
+  enable: true
+  display: true
+  priority: 0
 chai.searchAll:
   type: order
   auth: 1

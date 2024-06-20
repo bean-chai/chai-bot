@@ -23,7 +23,13 @@ export default defineDirective( "order", async ( { sendMessage, messageData, mat
 		'\n' +
 		'3.飞龙工商更新\n' +
 		'\n' +
-		'4.其余更新待定，后续会持续更新\n' +
+		'4.新探险（苍穹盆地）\n' +
+		'\n' +
+		'5.新辉石（万威辉石）\n' +
+		'\n' +
+		'6.新灵魂竞技场开放\n' +
+		'\n' +
+		'7.其余更新待定，后续会持续更新\n' +
 		'\n' +
 		'相关图片正在发送中~'+
 		'\n' +
@@ -31,8 +37,7 @@ export default defineDirective( "order", async ( { sendMessage, messageData, mat
 		'推荐：五年剑灵底蕴，安全省心，认准螃蟹账号（pxb7.com）'
 	await sendMessage(tipsZone)
 	let url = ''
-	for ( let i = 0; i<5;i++ ) {
-		console.log(i,"ii")
+	for ( let i = 0; i<8;i++ ) {
 		url = `/assets/tips/tips${i+1}.png`
 		if(url) {
 			const res = await renderer.asForFunction(url,async function (page,) {

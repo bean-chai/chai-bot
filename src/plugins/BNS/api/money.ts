@@ -6,14 +6,114 @@ import * as puppeteer from "puppeteer";
 import { sleep } from "@/utils/async";
 import { MessageElem } from "@/modules/lib";
 import { response } from "express";
+import { string } from "yaml/dist/schema/common/string";
+
 
 export default defineDirective( "order", async ( { sendMessage, messageData, matchResult } ) => {
 	await sendMessage( '查询中请稍等~' )
+	let zone = ''
 	
-	const zone = matchResult.match[0]
+	switch ( matchResult.match[0] ) {
+		case '月':
+			zone = '月华神';
+			break
+		case '月华':
+			zone = '月华神'
+			break
+		case '极':
+			zone = '极致时代'
+			break
+		case '极致':
+			zone = '极致时代'
+			break
+		case '无':
+			zone = '无日峰'
+			break
+		case '无日':
+			zone = '无日峰'
+			break
+		case '铁':
+			zone = '铁傀王'
+			break
+		case '铁傀':
+			zone = '铁傀王'
+			break
+		case '飞':
+			zone = '飞扇堂'
+			break
+		case '飞扇':
+			zone = '飞扇堂'
+			break
+		case '御':
+			zone = '御剑出鞘'
+			break
+		case '御剑':
+			zone = '御剑出鞘'
+			break
+		case '似':
+			zone = '似水华年'
+			break
+		case '似水':
+			zone = '似水华年'
+			break
+		case '花':
+			zone = '花样年华'
+			break
+		case '花样':
+			zone = '花样年华'
+			break
+		case '南':
+			zone = '南道拳豪'
+			break
+		case '南道':
+			zone = '南道拳豪'
+			break
+		case '直':
+			zone = '直上云霄'
+			break
+		case '直上':
+			zone = '直上云霄'
+			break
+		case '涅':
+			zone = '涅槃重生'
+			break
+		case '涅槃':
+			zone = '涅槃重生'
+			break
+		case '疾':
+			zone = '疾剑无形'
+			break
+		case '疾剑':
+			zone = '疾剑无形'
+			break
+		case '华':
+			zone = '华舞天青'
+			break
+		case '华舞':
+			zone = '华舞天青'
+			break
+		case '无限':
+			zone = '无限火力'
+			break
+		case '仙':
+			zone = '仙衣舞绝色'
+			break
+		case '仙衣':
+			zone = '仙衣舞绝色'
+			break
+		default:
+			zone = matchResult.match[0]
+	}
+	
 	const numberType = matchResult.match[1] === '1' ? 'dd' : matchResult.match[1] === '2' ? 'uu' : 'selfZone'
 	
-	let moneyZone = []
+	type type = {
+		zone: string,
+		name: string,
+		money: string
+	}
+	
+	let moneyZone: type[] = []
 	
 	
 	fetch('http://45.155.220.111:3000/chai/search').then(response => {
@@ -57,7 +157,6 @@ export default defineDirective( "order", async ( { sendMessage, messageData, mat
 	const url1 = moneyList['dd'][zone]
 	
 	if ( url || url1 ) {
-		console.log( 111 )
 		const res = await renderer.asForFunction( url, async function ( page, ) {
 			const encoding = 'base64'
 			const option: puppeteer.ScreenshotOptions = { encoding, type: 'jpeg', quality: 100 };

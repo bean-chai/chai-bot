@@ -66,7 +66,6 @@ export default defineComponent( {
 			return response.json();
 		} )
 			.then( async ( e ) => {
-				console.log( e, "eeee" )
 				userInfo.value = e.online
 				console.log(userInfo,"userInfo")
 				

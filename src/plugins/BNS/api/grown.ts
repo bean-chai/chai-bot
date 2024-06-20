@@ -13,7 +13,7 @@ export default defineDirective( "order", async ( { sendMessage, messageData,matc
 	}
 	
 	
-	if(zone==='风岛首饰' || zone==='喷风' || zone==='万威') {
+	if(zone==='风岛首饰' || zone==='喷风' || zone==='万威' || zone ==='狂虎' || zone==='海意' || zone==='九尾灵' || zone==='海意' || zone==='盛放') {
 		if ( "group_id" in messageData ) {
 			const res = await renderer.asSegment( '/views/grown/people.html', { data: [messageData.user_id,messageData.group_id,zone].join(',') } )
 			if(res.code === 'ok') {
@@ -21,7 +21,7 @@ export default defineDirective( "order", async ( { sendMessage, messageData,matc
 			}
 		}
 	} else {
-		await sendMessage('这个装备暂时没有统计耗材数据哦')
+		await sendMessage('柴柴懒狗暂时没有给这个装备暂时没有统计耗材数据哦')
 	}
 	
 	
